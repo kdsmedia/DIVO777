@@ -1,0 +1,71 @@
+DIVO777 — RELEASE NOTES (v1.0)
+===============================
+Version: 1.0.0
+Version code: 1
+Package: com.altomedia.divo777
+Date: 17 August 2026
+
+
+WHAT'S NEW (English)
+--------------------
+Welcome to DIVO777 — the free classic slot machine for Android!
+
+This is the first public release of DIVO777. Spin the reels, line up the
+symbols, and enjoy a colorful casino-style game that is completely free to
+play.
+
+Highlights of this release:
+
+- Five-reel classic slot machine with smooth animated spins
+- Ten themed symbols: fruits, bars, bells, sevens, and gems
+- Multiple pay lines with an on-screen pay lines reference panel
+- A built-in pay table so you always know what each symbol pays
+- Auto Spin mode for hands-free reel rolling
+- Free-to-play credits with free replenishment — no real money involved
+- Sound and music controls
+- Designed for landscape orientation on phones and tablets
+- Native Android app built with Kotlin and Jetpack Compose
+- Runs on Android 6.0 (API 23) and newer
+
+DIVO777 is an entertainment game. It does not involve real money, wagers, or
+prizes of any value. Thank you for playing — and good luck on the reels!
+
+
+WHAT'S NEW (Indonesian)
+-----------------------
+Selamat datang di DIVO777 — mesin slot klasik gratis untuk Android!
+
+Ini adalah rilis publik pertama DIVO777. Putar gulungan, susun simbol, dan
+nikmati permainan bergaya kasino yang benar-benar gratis.
+
+Sorotan rilis ini:
+
+- Mesin slot klasik lima gulungan dengan animasi putar yang halus
+- Sepuluh simbol bertema: buah, bar, lonceng, tujuh, dan permata
+- Beberapa garis pembayaran dengan panel referensi garis pembayaran
+- Tabel pembayaran bawaan agar Anda tahu nilai tiap simbol
+- Mode Auto Spin untuk memutar gulungan tanpa perlu menekan tombol
+- Kredit gratis dengan isi ulang gratis — tanpa uang sungguhan
+- Kontrol suara dan musik
+- Dirancang untuk orientasi lanskap di ponsel dan tablet
+- Aplikasi Android native yang dibangun dengan Kotlin dan Jetpack Compose
+- Berjalan di Android 6.0 (API 23) dan yang lebih baru
+
+DIVO777 adalah permainan hiburan. Tidak melibatkan uang sungguhan, taruhan,
+atau hadiah bernilai uang. Terima kasih telah bermain — semoga beruntung di
+gulungan!
+
+
+RELEASE META
+------------
+Application ID:      com.altomedia.divo777
+Version code:       1
+Version name:       1.0
+Min SDK:            23 (Android 6.0 Marshmallow)
+Target SDK:         37 (Android 16)
+Compile SDK:        36
+Signing key:        ALTOMEDIA.jks (alias: kdsmedia)
+Build type:         release
+Artifact:           app-release.aab
+
+=end

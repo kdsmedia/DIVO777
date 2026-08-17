@@ -1,0 +1,17 @@
+# Sensitive build credentials — NEVER commit to public repo
+ALTOMEDIA/release/ALTOMEDIA.jks
+ALTOMEDIA/release/keystore.properties
+android/keystore/
+android/keystore.properties
+
+# Build outputs
+**/build/
+**/.gradle/
+**/.kotlin/
+**/*.apk
+**/*.aab
+!ALTOMEDIA/release/*.apk
+!ALTOMEDIA/release/*.aab
+
+# Local config
+local.properties

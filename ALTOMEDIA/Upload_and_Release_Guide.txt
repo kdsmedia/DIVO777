@@ -1,0 +1,181 @@
+DIVO777 — UPLOAD & RELEASE GUIDE
+=================================
+Last updated: 17 August 2026
+Package: com.altomedia.divo777
+Developer: ALTOMEDIA
+
+
+1. ARTIFACTS PRODUCED BY THIS BUILD
+-----------------------------------
+This build produces a full Play Console release package located at:
+
+  /workspace/project/DIVO777/ALTOMEDIA/release/
+
+Files:
+
+  a) app-release.aab        — Android App Bundle (REQUIRED for new Play Console uploads)
+                              Signed with ALTOMEDIA.jks (alias: kdsmedia).
+  b) app-release.apk        — Signed universal APK (for internal testing / sideloading).
+  c) app-debug.apk          — Debug build for quick local testing on a device.
+  d) ALTOMEDIA.jks          — The release keystore (KEEP THIS SAFE — see Section 6).
+  e) keystore.properties    — Plain-text mapping of keystore path, passwords, and alias.
+
+Play Console accepts the .aab as the primary upload artifact and generates the
+optimized APKs that are delivered to each device configuration automatically.
+
+
+2. SIGNING CONFIGURATION
+------------------------
+Keystore file:      ALTOMEDIA.jks
+Keystore type:      JKS (RSA 2048, SHA384withRSA, validity 10000 days)
+Keystore password:  Kdsmedia@123
+Key alias:          kdsmedia
+Key password:       Kdsmedia@123
+Certificate DName:  CN=ALTOMEDIA, OU=Developer, O=ALTOMEDIA,
+                    L=Karawang, ST=Jawa Barat, C=ID
+
+The same keystore MUST be used for every subsequent update of this app. Using a
+different key will make Google Play reject the update with the error
+"Your APK or Android App Bundle is using a different signing key than the one
+that was previously uploaded." See Section 6 for backup instructions.
+
+
+3. HOW TO REBUILD THE APP BUNDLE
+--------------------------------
+Prerequisites:
+  - JDK 21 (JAVA_HOME set to the JDK install dir)
+  - Android SDK with platform android-36 and build-tools 35.0.0
+  - The keystore files ALTOMEDIA.jks and keystore.properties placed in
+    the `android/` folder of the project.
+
+Steps:
+
+  cd /workspace/project/DIVO777/android
+  export ANDROID_HOME=/home/openhands/android-sdk
+  export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+
+  # Clean + build signed release AAB and APK
+  ./gradlew clean :app:bundleRelease :app:assembleRelease --no-daemon
+
+  # Output artifacts:
+  #   app/build/outputs/bundle/release/app-release.aab
+  #   app/build/outputs/apk/release/app-release.apk
+
+If you only need a quick debug build for a device test:
+
+  ./gradlew :app:assembleDebug --no-daemon
+  # Output: app/build/outputs/apk/debug/app-debug.apk
+
+
+4. UPLOADING TO GOOGLE PLAY CONSOLE
+-----------------------------------
+4.1  Sign in to the Play Console at https://play.google.com/console
+     using the ALTOMEDIA developer account.
+
+4.2  Create the app (only the first time):
+     - App name:        DIVO777
+     - Default language:English (United States)
+     - App type:        Game
+     - Paid or free:    Free
+
+4.3  Set up the app (left sidebar -> "Set up your app"):
+     - App access:           mark as "Not available to everyone yet" if using the
+                             closed testing track, or "Available to everyone" for
+                             production release.
+     - Privacy Policy:       link the URL of Privacy_Policy.md hosted on a public
+                             page (e.g. GitHub Pages, a simple web page). The text
+                             is provided in Privacy_Policy.md.
+     - Ads:                  answer "Yes — my app contains ads" ONLY if you have
+                             integrated an ad SDK; the current build does NOT
+                             contain ads, so answer "No".
+     - Content rating:       fill the IARC questionnaire. Because the app is a
+                             non-gambling, free slot-machine-style game, answer
+                             truthfully. Expected result: rating Everyone (E).
+     - Target audience:       select "Teen and older" or "Adult" depending on the
+                             policy; the app does not knowingly appeal to children.
+     - News app / Government
+       apps / COVID-19
+       contact tracing:      answer "No" for all three.
+     - Data safety:           use the answers provided in
+                             Play_Store_Data_Safety.md.
+     - App category:          Games -> Casino (the App is a free casino-style
+                             game; see the policy note below).
+
+4.4  Create a new release (left sidebar -> "Release" -> "Production"
+     or "Testing" -> "Internal"/"Closed"):
+     - Click "Create new release".
+     - Upload:           app-release.aab
+     - Release name:     1.0.0
+     - Release notes:    copy from Release_Notes_v1.0.txt
+     - Review the release -> "Start rollout".
+
+4.5  Complete the "Store listing" under "Grow" -> "Store presence"
+     using Store_Listing_Guide.txt and the graphics in store-graphics/.
+
+
+5. PLAY CONSOLE DATA SAFETY ANSWERS
+-----------------------------------
+The current build of DIVO777 does NOT collect personal data, does NOT use ads,
+and does NOT use runtime permissions beyond INTERNET. Use Play_Store_Data_Safety.md
+as the authoritative source for the Data safety form answers.
+
+
+6. KEYSTORE BACKUP — READ THIS CAREFULLY
+----------------------------------------
+The keystore ALTOMEDIA.jks is the single most important file in this project.
+If you lose it, you will NOT be able to publish updates to this app on Google Play.
+
+Do all of the following:
+
+  a) Copy ALTOMEDIA.jks to at least two secure offline locations
+     (e.g. an encrypted USB drive, an offline password manager attachment,
+     a secure cloud vault).
+
+  b) Record the keystore password, key alias, and key password in a separate
+     secure password manager (these are in keystore.properties but DO NOT
+     store the properties file in any public location).
+
+  c) Do NOT commit ALTOMEDIA.jks or keystore.properties to a public git
+     repository. The .gitignore file in this project already excludes both.
+
+  d) Optional but recommended: enroll the app in Play App Signing and export
+     the upload key. This allows Google to hold the app signing key and lets
+     you reset the upload key if you lose it. Do this during the first
+     production release flow.
+
+
+7. IF THE UPLOAD IS REJECTED
+---------------------------
+Common rejections for casino-style apps and their fixes:
+
+  - "Gambling policy violation": Provide a clear store description stating the
+    app is for entertainment only, no real money. Keep Privacy_Policy.md and
+    Terms_of_Service.md publicly accessible. The Indonesian gambling-content
+    policy may restrict availability; if so, restrict distribution to
+    countries that allow casual/social casino games.
+
+  - "Missing privacy policy": Host Privacy_Policy.md on a public URL and
+    paste the URL in the Data safety / Privacy Policy field.
+
+  - "App not rated": Complete the content rating questionnaire.
+
+  - "Target audience issue": Confirm the target audience selection is
+    consistent with the content rating.
+
+  - "Deceptive behavior": Ensure the store listing does not imply real-money
+    winnings. The Store_Listing_Guide.txt avoids such language.
+
+
+8. ROLLING OUT AN UPDATE
+------------------------
+For each new release:
+
+  1. Bump versionCode and versionName in android/app/build.gradle.kts.
+  2. Rebuild with ./gradlew :app:bundleRelease :app:assembleRelease.
+  3. Copy the new app-release.aab into ALTOMEDIA/release/.
+  4. Create a new release in the Play Console on the SAME track (or a higher
+     track) and upload the new .aab.
+  5. Use the SAME keystore (ALTOMEDIA.jks / alias kdsmedia).
+  6. Write release notes for the new version.
+
+=end

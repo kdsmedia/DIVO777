@@ -1,0 +1,171 @@
+DIVO777 — STORE LISTING GUIDE
+==============================
+Last updated: 17 August 2026
+Package: com.altomedia.divo777
+
+This file provides copy-paste-ready values for every field in the Play Console
+"Store listing" page, plus a ready-to-use app icon, feature graphic, and five
+phone screenshots. All assets referenced here are in the store-graphics/ folder.
+
+
+A. APP DETAILS
+--------------
+App name:            DIVO777
+Short description:   Spin the reels in a free classic slot-machine game.
+                     (max 80 characters — this is 56 chars)
+Package name:        com.altomedia.divo777
+App type:            Game
+Category:            Games -> Casino
+Content rating:      Everyone (expected, after completing the IARC questionnaire)
+Ads:                 No (this build contains no advertising SDKs)
+In-app items:        None (this build has no in-app purchases)
+Application ID:      com.altomedia.divo777
+Min Android version: Android 6.0 (API level 23)
+Target Android:      Android 16 (API level 37)
+Compile SDK:         36
+
+
+B. FULL DESCRIPTION (max 4000 characters)
+-----------------------------------------
+DIVO777 brings the timeless charm of the classic Las Vegas slot machine to
+your Android device. Spin five glowing reels packed with fruit, bells, bars,
+sevens, and lucky gems, watch the pay lines light up when you hit a winning
+combination, and let Auto Spin keep the reels rolling while you sit back and
+enjoy the show.
+
+DIVO777 is a FREE-TO-PLAY entertainment game. There is no real money, no
+wagers, and no prizes of monetary value. Every credit in the game is a virtual
+in-game currency that exists only to let you play. If you run out, the game
+offers free replenishment options so the fun never has to stop.
+
+GAME FEATURES
+
+• Classic five-reel slot machine
+  DIVO777 captures the look and feel of a vintage fruit machine: spinning
+  reels, satisfying reel-stopping sounds, and a payout table you can study at
+  any time.
+
+• Ten themed symbols
+  From cherries and lemons to bars, bells, and sevens, each symbol has its
+  own payout value. Open the in-game pay table to see exactly what every
+  combination is worth.
+
+• Multiple pay lines
+  Several pay lines crisscross the reels, giving you many ways to land a
+  winning combination. Tap the pay lines button to see every line the game
+  recognises, so you always know where the action is happening.
+
+• Auto Spin
+  Prefer to sit back and watch? Activate Auto Spin and the reels will keep
+  turning automatically. You stay in control: stop Auto Spin at any time with
+  a single tap.
+
+• Built-in pay table and pay lines reference
+  New to slot machines? The integrated pay table explains every symbol and
+  every payout. The pay lines panel shows you the shape of each line so you
+  can learn the patterns at your own pace.
+
+• Local, private, and free
+  Your credit balance and game settings are stored locally on your device.
+  No account is required, and the game does not ask you for personal
+  information.
+
+A RESPONSIBLE APPROACH TO A CASINO THEME
+
+DIVO777 is intended for entertainment only. The game does not facilitate
+real-money gambling and does not offer prizes of any kind. If you ever feel
+that a casino-style game is no longer fun, simply close the app or uninstall
+it. There is nothing to lose, because there is nothing at stake.
+
+WHO IS DIVO777 FOR?
+
+DIVO777 is for anyone who enjoys a colourful, casual spinning experience. It
+is suitable for a general audience and contains no real-money play, no
+advertising, and no in-app purchases in this build. It is a perfect way to
+relax, take a break, and enjoy the simple pleasure of watching the reels
+spin.
+
+HOW TO PLAY
+
+1. Open the app — you start with a generous balance of free credits.
+2. Choose your bet per spin using the bet controls.
+3. Tap SPIN to set the reels in motion.
+4. Watch the reels stop and the pay lines light up on any win.
+5. Use the pay table and pay lines buttons to learn the symbol values and
+   the line shapes.
+6. Want to keep your hands free? Switch on Auto Spin and let the reels roll.
+7. Out of credits? The game offers free replenishment so the fun continues.
+
+TECHNICAL NOTES
+
+• DIVO777 is a native Android app built with Kotlin and Jetpack Compose.
+• The app is designed to run smoothly on a wide range of Android devices,
+  from Android 6.0 (API level 23) all the way up to the latest Android
+  release.
+• The app respects your battery and your screen: it adapts to landscape
+  orientation and pauses itself when you switch away, so it will not drain
+  your battery in the background.
+
+SUPPORT AND FEEDBACK
+
+We love hearing from players. If you have suggestions, questions, or
+feedback about DIVO777, please contact us at
+altomediaindonesia@gmail.com. We read every message and we use your
+feedback to guide future improvements to the game.
+
+Spin the reels, watch the symbols line up, and enjoy the classic casino
+atmosphere — entirely for free, entirely for fun.
+
+DIVO777. The night shift starts now.
+
+
+C. SIMPLE SUMMARY (for internal notes / taglines)
+-------------------------------------------------
+Tagline 1: The night shift starts now.
+Tagline 2: Spin. Win. Smile. Repeat.
+Tagline 3: Free reels. Free fun. No real money.
+
+
+D. GRAPHICS ASSETS (in store-graphics/)
+---------------------------------------
+All graphics are PNG and meet the Play Console dimension requirements.
+
+  app_icon_512.png             512 x 512    — App icon (32-bit PNG, no alpha)
+  feature_graphic_1024x500.png 1024 x 500   — Feature graphic
+  screenshot_1.png            1080 x 1920  — Screenshot: Spin to win (reels)
+  screenshot_2.png            1080 x 1920  — Screenshot: Pay table
+  screenshot_3.png            1080 x 1920  — Screenshot: Pay lines
+  screenshot_4.png            1080 x 1920  — Screenshot: Auto spin
+  screenshot_5.png            1080 x 1920  — Screenshot: Free play
+
+Up to 8 screenshots are allowed; these five cover the main features. Each
+screenshot has a short caption overlaid on a colored band and shows the
+relevant in-game screen or artwork.
+
+
+E. CONTACT AND PRIVACY URLS
+---------------------------
+Developer name:    ALTOMEDIA
+Developer email:   altomediaindonesia@gmail.com
+Privacy Policy:    (host Privacy_Policy.md on a public URL — e.g. a GitHub
+                  Pages site or a simple webpage — then paste the URL here)
+Website:           (optional — can be left blank if you do not have one)
+
+
+F. NOTES ON THE CASINO CATEGORY
+-------------------------------
+Google Play's Real Gambling policy requires that an app facilitating
+real-money gambling be a licensed, real-gambling app with specific
+country-level restrictions. DIVO777 does NOT fall into that category because
+it involves no real money and no prizes of monetary value. It should be
+listed under the Casino category as a free social/casual game. Make the
+non-gambling nature of the app explicit in the store description (the copy
+above does this) and keep the Privacy Policy and Terms of Service publicly
+accessible.
+
+If the app is rejected under the gambling policy, the most likely cause is
+an ambiguous store description or a missing privacy policy. Re-submit with
+explicit "free-to-play, no real money" language and a public privacy-policy
+URL.
+
+=end
