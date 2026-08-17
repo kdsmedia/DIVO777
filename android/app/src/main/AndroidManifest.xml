@@ -11,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RorkApp">
         <meta-data
-            android:name="com.altomedia.divo.DEVELOPER"
+            android:name="com.altomedia.divo777.DEVELOPER"
             android:value="ALTOMEDIA" />
         <meta-data
-            android:name="com.altomedia.divo.CONTACT"
+            android:name="com.altomedia.divo777.CONTACT"
             android:value="altomediaindonesia@gmail.com" />
         <activity
             android:name=".MainActivity"

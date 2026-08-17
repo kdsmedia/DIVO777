@@ -7,12 +7,12 @@ plugins {
 
 
 android {
-    namespace = "com.altomedia.divo"
+    namespace = "com.altomedia.divo777"
     compileSdk = 36
 
 
     defaultConfig {
-        applicationId = "com.altomedia.divo"
+        applicationId = "com.altomedia.divo777"
         minSdk = 23
         targetSdk = 37
         versionCode = 1

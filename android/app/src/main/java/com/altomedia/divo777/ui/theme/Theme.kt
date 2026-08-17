@@ -1,4 +1,4 @@
-package com.altomedia.divo.ui.theme
+package com.altomedia.divo777.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography
@@ -9,7 +9,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineBreak
-import com.altomedia.divo.R
+import com.altomedia.divo777.R
 
 val ArcadeGold: Color = Color(0xFFFFDE00)
 val ArcadePink: Color = Color(0xFFF10AD4)

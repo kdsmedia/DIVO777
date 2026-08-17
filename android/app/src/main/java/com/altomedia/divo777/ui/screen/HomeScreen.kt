@@ -1,4 +1,4 @@
-package com.altomedia.divo.ui.screens
+package com.altomedia.divo777.ui.screens
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
@@ -75,10 +75,10 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
-import com.altomedia.divo.R
-import com.altomedia.divo.ui.theme.ArcadeGold
-import com.altomedia.divo.ui.theme.ArcadePink
-import com.altomedia.divo.ui.theme.PanelPurple
+import com.altomedia.divo777.R
+import com.altomedia.divo777.ui.theme.ArcadeGold
+import com.altomedia.divo777.ui.theme.ArcadePink
+import com.altomedia.divo777.ui.theme.PanelPurple
 import java.text.NumberFormat
 import java.util.Locale
 

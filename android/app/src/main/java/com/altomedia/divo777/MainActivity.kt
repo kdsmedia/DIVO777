@@ -1,11 +1,11 @@
-package com.altomedia.divo
+package com.altomedia.divo777
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.altomedia.divo.ui.navigation.AppNavigation
-import com.altomedia.divo.ui.theme.AppTheme
+import com.altomedia.divo777.ui.navigation.AppNavigation
+import com.altomedia.divo777.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.altomedia.divo.ui.screens
+package com.altomedia.divo777.ui.screens
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

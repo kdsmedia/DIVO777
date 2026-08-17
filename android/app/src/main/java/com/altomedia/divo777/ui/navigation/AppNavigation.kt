@@ -1,10 +1,10 @@
-package com.altomedia.divo.ui.navigation
+package com.altomedia.divo777.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.altomedia.divo.ui.screens.HomeScreen
+import com.altomedia.divo777.ui.screens.HomeScreen
 
 @Composable
 fun AppNavigation() {
